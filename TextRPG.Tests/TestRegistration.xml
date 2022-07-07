@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<testsuite>
+  <Row>
+    <name>Asad</name>
+    <password>Dalah2</password>
+  </Row>
+  <Row>
+    <name>Dalah</name>
+    <password>Sas</password>
+  </Row>
+  <Row>
+    <name>Failure</name>
+    <password>Failure</password>
+  </Row>
+</testsuite>
