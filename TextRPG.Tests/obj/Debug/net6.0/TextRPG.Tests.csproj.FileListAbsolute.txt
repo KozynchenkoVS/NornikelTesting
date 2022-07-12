@@ -152,3 +152,8 @@ C:\Users\Лавандос\source\repos\TextRPG\TextRPG.Tests\obj\Debug\net6.0\re
 C:\Users\Лавандос\source\repos\TextRPG\TextRPG.Tests\obj\Debug\net6.0\TextRPG.Tests.pdb
 C:\Users\Лавандос\source\repos\TextRPG\TextRPG.Tests\obj\Debug\net6.0\TextRPG.Tests.genruntimeconfig.cache
 C:\Users\Лавандос\source\repos\TextRPG\TextRPG.Tests\obj\Debug\net6.0\ref\TextRPG.Tests.dll
+C:\Users\Лавандос\source\repos\TextRPG\TextRPG.Tests\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Лавандос\source\repos\TextRPG\TextRPG.Tests\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\Лавандос\source\repos\TextRPG\TextRPG.Tests\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Лавандос\source\repos\TextRPG\TextRPG.Tests\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Лавандос\source\repos\TextRPG\TextRPG.Tests\bin\Debug\net6.0\Microsoft.Net.Http.Headers.dll

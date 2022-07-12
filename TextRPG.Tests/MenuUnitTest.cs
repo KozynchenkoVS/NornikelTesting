@@ -37,7 +37,7 @@ namespace TextRPG.Tests
             var mockContext = new Mock<RPGContext>();
             mockContext.Setup(m => m.Users).Returns(db);
             var actual = a.Registration(name, password, mockContext.Object);
-            Assert.IsTrue(actual);
+            Assert.IsTrue(actual[0].Name == name & actual[0].Password == password);
         }
 
         [TestMethod]

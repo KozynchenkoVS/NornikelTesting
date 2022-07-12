@@ -9,7 +9,8 @@ namespace TextRPG
     public class Skill
     {
 
-        public Skill(string name, string description, int cost, int damage)        {
+        public Skill(string name, string description, int cost, int damage)
+        {
             Name = name;
             Description = description;
             this.cost = cost;

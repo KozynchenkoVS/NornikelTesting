@@ -165,5 +165,73 @@ namespace TextRPG.Tests
             return null;
         }
     }
+    public class ResponseOKData : Attribute, ITestDataSource
+    {
+        public IEnumerable<object[]> GetData(MethodInfo methodInfo)
+        {
+            yield return new object[] { "inn", "7708503727" };
+            yield return new object[] { "inn", "7736050003" };
+            yield return new object[] { "inn", "7452027843" };
+        }
+
+        public string GetDisplayName(MethodInfo methodInfo, object[] data)
+        {
+            if (data != null)
+                return string.Format(CultureInfo.CurrentCulture, "Custom - {0} ({1})", methodInfo.Name, string.Join(",", data));
+
+            return null;
+        }
+    }
+    public class ResponseResultsData : Attribute, ITestDataSource
+    {
+        public IEnumerable<object[]> GetData(MethodInfo methodInfo)
+        {
+            yield return new object[] { "inn", "7708503727", "РЖД" };
+            yield return new object[] { "inn", "7736050003", "ГАЗПРОМ" };
+            yield return new object[] { "inn", "7452027843", "ЧТЗ-УРАЛТРАК" };
+        }
+
+        public string GetDisplayName(MethodInfo methodInfo, object[] data)
+        {
+            if (data != null)
+                return string.Format(CultureInfo.CurrentCulture, "Custom - {0} ({1})", methodInfo.Name, string.Join(",", data));
+
+            return null;
+        }
+    }
+    public class GenderizeOkData : Attribute, ITestDataSource
+    {
+        public IEnumerable<object[]> GetData(MethodInfo methodInfo)
+        {
+            yield return new object[] { "peter" };
+            yield return new object[] { "nikita" };
+            yield return new object[] { "michael" };
+        }
+
+        public string GetDisplayName(MethodInfo methodInfo, object[] data)
+        {
+            if (data != null)
+                return string.Format(CultureInfo.CurrentCulture, "Custom - {0} ({1})", methodInfo.Name, string.Join(",", data));
+
+            return null;
+        }
+    }
+    public class GenderizeResultsData : Attribute, ITestDataSource
+    {
+        public IEnumerable<object[]> GetData(MethodInfo methodInfo)
+        {
+            yield return new object[] { "peter", "male" };
+            yield return new object[] { "john", "male" };
+            yield return new object[] { "michael" , "male" };
+        }
+
+        public string GetDisplayName(MethodInfo methodInfo, object[] data)
+        {
+            if (data != null)
+                return string.Format(CultureInfo.CurrentCulture, "Custom - {0} ({1})", methodInfo.Name, string.Join(",", data));
+
+            return null;
+        }
+    }
 
 }

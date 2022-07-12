@@ -122,7 +122,7 @@ namespace TextRPG
             }
 
         }
-      public bool Registration(string? name, string? password, RPGContext a)
+      public List<User> Registration(string? name, string? password, RPGContext a)
         {
             if (name.Length == 0 || password.Length == 0) { throw new ArgumentNullException(); }
             else
@@ -134,7 +134,7 @@ namespace TextRPG
                     ////a.SaveChanges();
                 Console.WriteLine("Регистрация прошла успешно");
                 //this.ShowFirst();
-                return true;
+                return a.Users.ToList();
             }
         }
 
